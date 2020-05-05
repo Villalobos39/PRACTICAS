@@ -4,7 +4,7 @@
 
 
 Vlr1 = 8
-Vlr2 = 44
+[lr]Vlr2 = 44
 	data Ra, Vlr1
 	data Rb, Vlr2
 .begin:	
