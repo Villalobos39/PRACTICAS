@@ -14,4 +14,4 @@ Vlr2 = 44
 	jnz .begin
 	hlt ;Detener
   
-  ![]()
+  ![](https://github.com/Villalobos39/PRACTICAS/blob/master/1.PNG)
