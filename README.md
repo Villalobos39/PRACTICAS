@@ -1,6 +1,6 @@
 # PRACTICAS
 
-## 1 CÓDIGO
+## CÓDIGO II
 
 
 Vlr1 = 8
@@ -16,3 +16,8 @@ Vlr2 = 44
   
   ![](https://github.com/Villalobos39/PRACTICAS/blob/master/1.PNG)
   ![](https://github.com/Villalobos39/PRACTICAS/blob/master/2.PNG)
+
+## Código II
+
+![]()
+![]()
