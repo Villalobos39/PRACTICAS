@@ -1,0 +1,197 @@
+--------------- 1
+Vlr1 = 8
+Vlr2 = 44
+	data Ra, Vlr1
+	data Rb, Vlr2
+.begin:	
+	mov Rd, Ra
+	inc Ra
+	cmp Ra
+	jnz .begin
+	hlt ;Detener
+----------------- 2
+Vlr1 = 7
+Vlr2 = 53
+	data Ra, Vlr1
+	data Rb, Vlr2
+.begin:	
+	mov Rd, Ra
+	inc Ra
+	inc Ra
+	cmp Ra
+	jnz .begin
+	hlt ;Detener
+----------------- 3
+Vlr1 = 2
+Vlr2 = 48
+	data Ra, Vlr1
+	data Rb, Vlr2
+.begin:	
+	mov Rd, Ra
+	inc Ra
+	inc Ra
+	cmp Ra
+	jnz .begin
+	hlt ;Detener
+--------------- 4 
+Vlr1 = 0
+Vlr2 = 29
+	data Ra, Vlr1
+	data Rb, Vlr2
+.begin:	
+	mov Rd, Ra
+	inc Ra
+	inc Ra
+	cmp Ra
+	jnz .begin
+	hlt  ;Detener
+---------------- 5
+Vlr1 = 2
+Vlr2 = 128
+	data Ra, Vlr1
+	data Rb, Vlr2
+.begin:	
+	mov Rd, Ra
+	jnz .Potencial
+	hlt  ;Detener
+.Potencial:
+	mov Rb, Ra
+	add Ra
+	mov Rd, Ra
+	mov Rb, Vlr2
+	cmp Ra
+	jnz .Potencial
+	hlt  ;Detener
+------------------- 6
+Pt = 10
+	data Ra, 0
+	data Rb, 0
+.begin:	
+	mov Rd, 12
+add Rc
+mov Rd, Rc
+mov Rb, Pt
+	inc Ra
+	cmp Ra
+	jnz .begin
+	hlt  ;Detener
+---------------- 7
+divisor = 14
+	data Rd, divisor
+    data Rd, 14
+.begin: 
+	cmp Rd 
+    jnz .loop
+    jz .SiEsDivisible
+.loop:
+	mov Ra, 14
+	add Ra
+	mov Rb, Ra
+	cmp Rd
+	jn .NoEsDivisible
+	jz .SiEsDivisible
+	jnn .loop
+.NoEsDivisible:
+	mov Rd, 0
+	hlt ; Detener
+.SiEsDivisible:
+	hlt ; Detener
+  --------------- 8
+Multiplo = 6
+    data Rd, Multiplo 
+	data Rb, 6
+	mov Ra,Rd
+.begin:
+	sub Ra
+	tst Ra
+	jn .NoEsMiltiplo
+	jz .SiEsMiltiplo	
+	jnz .begin
+.NoEsMiltiplo:
+	mov Rd, 0
+	hlt  ;Detener
+.SiEsMiltiplo:
+	mov Rd, 1
+	hlt ;Detener
+------------- 9
+Vlr= 8 
+	data Rd, Vlr
+	data Rb, 2
+	mov Ra,Rd
+.begin:
+	sub Ra
+	tst Ra
+	jn .NoPar
+	jz .SiPar
+	jnz .begin
+.NoPar:
+	mov Rd, 0
+	hlt  ;Detener
+.SiPar:
+	mov Rd, 1
+	hlt ;Detener
+  --------- 10
+Vlr1 = 0
+Vlr2 = 26
+	data Ra, Vlr1
+	data Rb, Vlr2
+.begin:	
+	mov Rd, Ra
+	inc Ra
+	jn .NoPar
+	jz .SiPar
+	cmp Ra
+	jnz .begin
+	hlt  ;Detener
+.NoPar:
+	mov Rd, 0
+	hlt  ;Detener
+.SiPar:
+	mov Rd, 1
+	hlt ;Detener
+  ----------- 10+ 
+Vlr = 1
+VlrF = 25
+.begin:	
+	clra
+	mov Rc, 0
+	jnz .Enteros
+            sub Ra
+	tst Ra
+	jn .NoPar
+	jz .SiPar
+	jnz .begin
+
+.Enteros:
+	mov Rd, Ra
+	inc Ra
+	cmp Ra
+	jnz .begin
+	hlt ;Detener
+.NoPar:
+	mov Rd, 0
+	hlt  ;Detener
+.SiPar:
+	mov Rd, 1
+	hlt ;Detener
+-------------10++
+n = 1
+fin = 12
+.begin:	
+	clra
+	mov Rc, 0
+	jnz .ciclo
+.ciclo:
+	inc Rc
+	mov Ra, Rc
+	mov Rb, Ra
+	add Ra
+	mov Rd,Ra
+	mov Rb, fin
+	cmp Rc
+	jnz .ciclo
+	hlt
+
+
+	
+
