@@ -19,5 +19,5 @@ Vlr2 = 44
 
 ## Código II
 
-![]()
-![]()
+![](https://github.com/Villalobos39/PRACTICAS/blob/master/3.PNG)
+![](https://github.com/Villalobos39/PRACTICAS/blob/master/4.PNG)
